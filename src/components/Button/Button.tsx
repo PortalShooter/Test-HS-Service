@@ -8,6 +8,7 @@ const cn = classnames.bind(styles);
 type typeBtn = 'danger' | 'success' | 'warning' | 'primary'
 
 interface ButtonProps {
+  refProp?: any;
   children: React.ReactNode;
   loading?: boolean;
   onClick: () => void;
@@ -22,6 +23,7 @@ interface ButtonProps {
 
 const Button: FC<ButtonProps> = (
   {
+    refProp = null,
     children,
     loading = false,
     onClick,
@@ -34,7 +36,8 @@ const Button: FC<ButtonProps> = (
     text = false,
   }) => {
   return (
-    <button 
+    <button
+      ref={refProp}
       onClick={onClick} 
       className={cn(
         'button',

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './components/Button';
 import PlusIcon from './icons/PlusIcon';
+import Dropdown from './components/Dropdown';
 
 function App() {
   return (
@@ -12,9 +13,11 @@ function App() {
             large
           >
             <PlusIcon />
-            <span>Some text</span>
+            Some text
           </Button>
       </div>
+
+      <Dropdown text='Dropdown' listItem={[1,2,3]} />
     </div>
   );
 }

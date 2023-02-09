@@ -1,0 +1,13 @@
+.dropdown {
+  position: relative;
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    color: rgba(0, 0, 0, .87);
+  }
+  &__item {
+    padding: 10px;
+  }
+}
