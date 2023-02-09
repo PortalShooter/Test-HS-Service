@@ -1,6 +1,8 @@
 .dropdown {
   position: relative;
-
+  z-index: 2;
+  display: inline-block;
+  
   &__list {
     position: absolute;
     width: 100%;

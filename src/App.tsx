@@ -2,8 +2,11 @@ import React from 'react';
 import Button from './components/Button';
 import PlusIcon from './icons/PlusIcon';
 import Dropdown from './components/Dropdown';
+import TodoList from './components/TodoList';
+import Modal from './components/Modal';
 
 function App() {
+
   return (
     <div className="App">
       <div style={{width: '300px'}}>
@@ -15,9 +18,13 @@ function App() {
             <PlusIcon />
             Some text
           </Button>
+
+          <Dropdown text='Dropdown' listItem={[1,2,3]} />
       </div>
 
-      <Dropdown text='Dropdown' listItem={[1,2,3]} />
+      <TodoList />
+
+      <Modal />
     </div>
   );
 }
